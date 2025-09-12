@@ -28,3 +28,14 @@ if athleticism_goal == "below average":
         print('71 - 97')
     else:
         print("Invalid Age")
+elif athleticism_goal == "above average":
+    if age > 19 and age < 40:
+        print('47 - 72')
+    elif age > 39 and age < 60:
+        print('46 - 71')
+    elif age > 59 and age < 80:
+        print('45 - 70')
+    else:
+        print("Invalid Age")
+else:
+    print("Invalid Athleticism Goal")
