@@ -15,7 +15,7 @@ else:
 '''
 
 #Problem 4
-
+'''
 age = int(input("Enter your age: "))
 athleticism_goal = input("Enter your athleticism goal: ").lower()
 
@@ -39,3 +39,16 @@ elif athleticism_goal == "above average":
         print("Invalid Age")
 else:
     print("Invalid Athleticism Goal")
+'''
+
+#Problem 5
+
+num1 = int(input("enter number: "))
+num2 = int(input("enter a second number: "))
+num3 = int(input("enter a third number: "))
+
+if num1 < num2:
+    if num1 < num3:
+        if num2 < num3:
+            print(num1, num2, num3)
+elif num
