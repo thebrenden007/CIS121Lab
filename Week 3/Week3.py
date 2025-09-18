@@ -134,11 +134,57 @@ else:
 '''
 
 #Problem 10
-
+'''
 health_points = -1
 character_race = input("enter a race: ").lower()
 character_class = input("enter a class: ").lower()
 
 if character_race == "elf":
     if character_class == "warrior":
-        print(f'health_points == 150')
+        health_points = 150
+        print(f'Health points is at {health_points}')
+    elif character_class == "bard":
+        health_points = 75
+        print(f'Health points is at {health_points}')
+    elif character_class == "wizard":
+        health_points = 25
+        print(f'Health points is at {health_points}')
+    else:
+        print("Invalid Class")
+elif character_race == "ogre":
+    if character_class == "warrior":
+        health_points = 200
+        print(f'Health points is at {health_points}')
+    elif character_class == "bard":
+        health_points = 100
+        print(f'Health points is at {health_points}')
+    elif character_class == "wizard":
+        health_points = 50
+        print(f'Health points is at {health_points}')
+    else:
+        print("Invalid Class")
+else:
+    print("Invalid Race")
+'''
+
+#Problem 11
+'''
+from random import randint
+value = randint(0,1)
+guess = input("enter your guess: ").lower()
+heads = 0
+tails = 1
+
+if guess == "heads":
+    if 0 == value:
+        print("You are correct")
+    elif 0 != value:
+        print("You are incorrect")
+elif guess == "tails":
+    if 1 == value:
+        print("You are correct")
+    elif 1 != value:
+        print("You are incorrect")
+else:
+    print("Invalid Guess")
+'''
