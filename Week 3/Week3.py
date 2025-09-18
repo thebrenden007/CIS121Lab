@@ -41,22 +41,22 @@ else:
     print("Invalid Athleticism Goal")
 '''
 
-#Problem 5
+#Problem 
 '''
 num1 = int(input("enter first number: "))
 num2 = int(input("enter second number: "))
 num3 = int(input("enter third number: "))
 
-if num1 < num2 or num3:
+if num1 < num2 and num1 < num3:
     if num2 < num3:
         print(num1, num2, num3)
     else:
         print(num1, num3, num2)
-elif num2 < num1 or num3:
+elif num2 < num1 and num2 < num3:
     if num1 < num3:
         print(num2, num1, num3)
     else:
-        print(num2, num3, num2)
+        print(num2, num3, num1)
 else:
     if num1 < num2:
         print(num3, num1, num2)
@@ -65,3 +65,56 @@ else:
 '''
 
 #Problem 6
+'''
+num1 = int(input("enter first number: "))
+num2 = int(input("enter second number: "))
+num3 = int(input("enter third number: "))
+
+if num1 > num2 and num > num3:
+    if num2 > num3:
+        print(num1, num2, num3)
+    else:
+        print(num1, num3, num2)
+elif num2 > num1 and num2 > num3:
+    if num1 > num3:
+        print(num2, num1, num3)
+    else:
+        print(num2, num3, num1)
+else:
+    if num1 > num2:
+        print(num3, num1, num2)
+    else:
+        print(num3, num2, num1)
+'''
+
+#Problem 7
+'''
+knuts = int(input("enter amount of knuts: "))
+galleons = knuts // (29 * 17)
+knuts_remaining = knuts % (29 * 17)
+sickles =  knuts_remaining // 29
+knuts_final = knuts_remaining % 29
+
+output = ""
+if galleons > 0:
+    output.append(f"{galleons} galleon{'s' if galleons > 1 else ''}")
+if sickles > 0:
+    output.append(f"{sickles} sickle{'s' if sickles > 1 else ''}")
+if knuts_final > 0:
+    output.append(f"{knuts_final} knuts")
+print(output)
+'''
+
+#Problem 8
+'''
+num1 = int(input("enter a number: "))
+num2 = int(input("enter another number: "))
+num3 = int(input("enter another number: "))
+
+if num1 > num2 and num1 > num3:
+    print(f'The largest number is {num1}')
+elif num2 > num1 and num2 > num3:
+    print(f'The largest number is {num2}')
+else:
+    print(f'The largest number is {num3}')
+'''
