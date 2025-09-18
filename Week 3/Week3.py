@@ -118,3 +118,27 @@ elif num2 > num1 and num2 > num3:
 else:
     print(f'The largest number is {num3}')
 '''
+
+#Problem 9
+'''
+num1 = int(input("enter a number: "))
+num2 = int(input("enter another number: "))
+num3 = int(input("enter another number: "))
+
+if num1 < num2 and num1 < num3:
+    print(f'The smallest number is {num1}')
+elif num2 < num1 and num2 < num3:
+    print(f'The smallest number is {num2}')
+else:
+    print(f'The smallest number is {num3}')
+'''
+
+#Problem 10
+
+health_points = -1
+character_race = input("enter a race: ").lower()
+character_class = input("enter a class: ").lower()
+
+if character_race == "elf":
+    if character_class == "warrior":
+        print(f'health_points == 150')
