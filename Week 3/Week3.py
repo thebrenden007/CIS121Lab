@@ -188,11 +188,3 @@ elif guess == "tails":
 else:
     print("Invalid Guess")
 '''
-
-#Problem 12
-
-num1 = int(input("enter a number: "))
-num2 = int(input("enter another number: "))
-num3 = int(input("enter another number: "))
-
-if 
