@@ -20,3 +20,5 @@ for pos in range(1, len(word), 2):
 startnum = 37
 endnum = 1050
 while startnum
+
+print()
