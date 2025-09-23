@@ -19,6 +19,8 @@ for pos in range(1, len(word), 2):
 #Problem 3
 startnum = 37
 endnum = 1050
-while startnum
+num = 0
 
-print()
+while num > startnum and num < endnum:
+    if num % 2 == 0:
+        print(num += 1)
