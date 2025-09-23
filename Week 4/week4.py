@@ -18,8 +18,6 @@ for pos in range(1, len(word), 2):
 '''
 #Problem 3
 '''
-startnum = 37
-endnum = 1050
 num = 0
 
 for num in range (37,1050 +1):
@@ -27,6 +25,7 @@ for num in range (37,1050 +1):
         print(num)
 '''
 #Problem 4
+'''
 word = ''
 done = False
 while not done:
@@ -37,3 +36,26 @@ while not done:
     else:
         done = True
 print(word)
+'''
+#Problem 5'
+'''
+num = 0
+total = 0
+for num in range (50,517 +1):
+    if num % 2 != 0:
+        total += num
+print(total)
+'''
+#Problem 6
+'''
+total = 0
+done = False
+while not done:
+    integer = int(input("enter an integer: "))
+    if integer > 0:
+        total += int(integer)
+    else:
+        done = True
+print(total)
+'''
+#Problem 7
