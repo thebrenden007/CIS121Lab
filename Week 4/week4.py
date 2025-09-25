@@ -59,7 +59,7 @@ while not done:
 print(total)
 '''
 #Problem 7
-
+'''
 n = int(input("enter an integer: "))
 
 while n != 1:
@@ -68,3 +68,32 @@ while n != 1:
     elif n % 2 != 0:
        n = ((3 * n) + 1)
     print(n)
+'''
+#Problem 8
+'''
+user_num = int(input("enter a number: "))
+
+for num in range (1,user_num +1):
+    if user_num % num == 0:
+        print(num)
+'''
+#Problem 9
+'''
+width = int(input("enter a width: "))
+length = int(input("enter a lenght: "))
+pattern = input("enter a pattern: ")
+'''
+#Problem 10
+
+largest = 0
+done = False
+while not done:
+    integer = int(input("enter a number: "))
+    if integer > 0:
+        if integer % 2 == 0:
+            largest = integer
+    elif integer < 0:
+            if largest % 2 != 0:
+                 largest = -1
+            done = True
+print(largest)
