@@ -59,3 +59,12 @@ while not done:
 print(total)
 '''
 #Problem 7
+
+n = int(input("enter an integer: "))
+
+while n != 1:
+    if n % 2 == 0:
+        n = n // 2
+    elif n % 2 != 0:
+       n = ((3 * n) + 1)
+    print(n)
