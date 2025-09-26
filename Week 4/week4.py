@@ -82,7 +82,7 @@ for num in range (1,user_num +1):
 width = int(input("enter a width: "))
 length = int(input("enter a lenght: "))
 pattern = input("enter a pattern: ")
-pattern.append(pattern)
+
 for num in range (0, width + 1):
     print(pattern)
 
