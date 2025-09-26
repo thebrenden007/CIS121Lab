@@ -37,7 +37,7 @@ while not done:
         done = True
 print(word)
 '''
-#Problem 5'
+#Problem 5
 '''
 num = 0
 total = 0
@@ -78,22 +78,23 @@ for num in range (1,user_num +1):
         print(num)
 '''
 #Problem 9
-'''
+
 width = int(input("enter a width: "))
 length = int(input("enter a lenght: "))
-pattern = input("enter a pattern: ")
-'''
-#Problem 10
+pattern = int(input("enter a pattern: "))
 
+#Problem 10
+'''
 largest = 0
 done = False
 while not done:
     integer = int(input("enter a number: "))
     if integer > 0:
         if integer % 2 == 0:
-            largest = integer
-    elif integer < 0:
-            if largest % 2 != 0:
-                 largest = -1
-            done = True
+            if integer > largest:
+                largest = int(integer)
+    else:
+        largest = -1
+        done = True
 print(largest)
+'''
