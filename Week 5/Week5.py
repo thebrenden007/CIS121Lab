@@ -12,6 +12,9 @@ input_height = int(input("enter the height: "))
 
 print(f"The volume is: {pyramid_volume(input_base, input_height)}")
 '''
+#Problem 2
+
+
 #Problem 8
 '''
 def pool_time(user_grade, user_time):
@@ -69,18 +72,20 @@ print(f"For {user_input} knuts I can buy: {convert_knuts(user_input)}")
 
 #Strings
 #Problem 2
+'''
+def is_fever(input):
+    unit = input[-1]
+    temperature = int(input[:-1])
+    output = False
+    if unit == "F":
+        if temperature > 98.6:
+            output = True
+    elif unit == "C":
+        if temperature > 37:
+            output = True
 
-def is_fever(temperature):
-    
-    if temperature[-1] == "F":
-        if temperature[:-1] > 98.6:
-            return True
-        else:
-            return False
-    if temperature[-1] == "C":
-        if temperature[0:-1] > 37:
-            return True
-        else:
-            return False
+    return output
 
-    return True
+user_input = input("Enter a temperature 00F or 00C: ")
+print(f"{is_fever(user_input)}")
+'''
