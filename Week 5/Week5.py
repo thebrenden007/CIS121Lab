@@ -13,8 +13,29 @@ input_height = int(input("enter the height: "))
 print(f"The volume is: {pyramid_volume(input_base, input_height)}")
 '''
 #Problem 2
+'''
+def cone_volume(user_radius, user_height):
+    volume_output = ""
+    import math
+    volume_output = ((math.pi) * (((user_radius ** 2) * user_height) / 3))
+    return volume_output
 
+input_radius = int(input("enter the radius: "))
+input_height = int(input("enter the height: "))
+print(f"The volume is: {cone_volume(input_radius, input_height)}")
+'''
+#Problem 3
+'''
+def total_score(two_pointers, three_pointers):
+    score_output = ""
 
+    score_output = (two_pointers * 2) + (three_pointers * 3)
+    return score_output
+
+two_input = int(input("number of two pointers: "))
+three_input = int(input("number of three pointers: "))
+print(f"The total score is {total_score(two_input, three_input)}")
+'''
 #Problem 8
 '''
 def pool_time(user_grade, user_time):
@@ -65,12 +86,14 @@ def convert_knuts(knuts):
 
     return output
 
-
 user_input = int(input("enter amount of knuts: "))
 print(f"For {user_input} knuts I can buy: {convert_knuts(user_input)}")
 '''
 
 #Strings
+#Problem 1
+
+
 #Problem 2
 '''
 def is_fever(input):

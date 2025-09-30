@@ -101,3 +101,11 @@ while not done:
         done = True
 print(largest)
 '''
+#Problem 12
+num1 = int(input("Enter an integer: "))
+num2 = int(input("Enter another integer: "))
+
+print("The multiplication table is:")
+
+for i in range(1, num1 + 1):
+    print("(f"{i*j:4}" for  in range(1, num2 + 1))")
