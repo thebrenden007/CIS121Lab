@@ -92,8 +92,13 @@ print(f"For {user_input} knuts I can buy: {convert_knuts(user_input)}")
 
 #Strings
 #Problem 1
-
-
+'''
+def reverse_string(word):
+    reversed_word = word[::-1]
+    return reversed_word
+user_word = input("enter a word: ")
+print(f"{reverse_string(user_word)}")
+'''
 #Problem 2
 '''
 def is_fever(input):
@@ -111,4 +116,21 @@ def is_fever(input):
 
 user_input = input("Enter a temperature 00F or 00C: ")
 print(f"{is_fever(user_input)}")
+'''
+#Problem 3
+'''
+def is_boiling(input):
+    unit = input[-1]
+    temperature = int(input[:-1])
+    output = False
+    if unit == "F":
+        if temperature >= 212:
+            output = True
+    elif unit == "C":
+        if temperature >= 100:
+            output = True
+    return output
+
+user_input = input("Enter a temperature 000F or 000C: ")
+print(f"{is_boiling(user_input)}")
 '''
