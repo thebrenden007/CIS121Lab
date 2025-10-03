@@ -205,5 +205,3 @@ def last_letters(sentence):
 user_input = input("enter a sentence: ")
 print(f"{last_letters(user_input)}")
 '''
-
-print('apple'[-2])
