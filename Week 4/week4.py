@@ -102,7 +102,7 @@ while not done:
 print(largest)
 '''
 #Problem 12
-
+'''
 num1 = int(input("Enter an integer: "))
 num2 = int(input("Enter another integer: "))
 
@@ -112,7 +112,7 @@ for number1 in range(1, num1 +1):
     for number2 in range(1, num2 +1):
         print(f"{number1 * number2:4}", end = "")
     print()
-
+'''
 #Problem 13
 '''
 height = int(input("enter the height: "))

@@ -162,7 +162,6 @@ print(f"{hamming_distance(s1, s2)}")
 '''
 def is_isogram(string):
     for letter in string:
-        
             output = False
     else:
         output = True
@@ -195,7 +194,7 @@ user_input = input("enter a sentence: ")
 print(f"{first_letters(user_input)}")
 '''
 #Problem 8
-
+'''
 def last_letters(sentence):
     words = sentence.split()
     built_word = ''
@@ -205,3 +204,4 @@ def last_letters(sentence):
 
 user_input = input("enter a sentence: ")
 print(f"{last_letters(user_input)}")
+'''
