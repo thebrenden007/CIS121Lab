@@ -89,7 +89,19 @@ def convert_knuts(knuts):
 user_input = int(input("enter amount of knuts: "))
 print(f"For {user_input} knuts I can buy: {convert_knuts(user_input)}")
 '''
+#Problem 17
+'''
+def check_letter(letter):
+    if letter in 'aeiou':
+        output = "Vowel"
+    else:
+        output = "Constant"
 
+    return output
+
+letter_input = input("enter a letter: ")
+print(f"{check_letter(letter_input)}")
+'''
 #Strings
 #Problem 1
 '''
@@ -134,3 +146,62 @@ def is_boiling(input):
 user_input = input("Enter a temperature 000F or 000C: ")
 print(f"{is_boiling(user_input)}")
 '''
+#Problem 4
+'''
+def hamming_distance(string1, string2):
+    distance = 0
+    for num in range (len(string1)):
+        if string1[num] != string2[num]:
+            distance += 1
+    return distance
+s1 = input("enter a word: ")
+s2 = input("enter another word: ")
+print(f"{hamming_distance(s1, s2)}")
+'''
+#Problem 5
+'''
+def is_isogram(string):
+    for letter in string:
+        
+            output = False
+    else:
+        output = True
+    return output
+
+word = input("enter a word: ")
+print(f"{is_isogram(word)}")
+'''
+#Problem 6
+'''
+def get_drink_ID(input1, input2):
+    capacity = input2
+    flavor = input1[:3]
+    return flavor + str(capacity)
+
+flav = input("enter a flavor: ")
+cap = int(input("enter a capacity: "))
+print(f"{get_drink_ID(flav, cap)}")
+'''
+#Problem 7
+'''
+def first_letters(sentence):
+    words = sentence.split()
+    built_word = ''
+    for word in words:
+        built_word += word[0]
+    return built_word
+
+user_input = input("enter a sentence: ")
+print(f"{first_letters(user_input)}")
+'''
+#Problem 8
+
+def last_letters(sentence):
+    words = sentence.split()
+    built_word = ''
+    for word in words:
+        built_word += word[-1]
+    return built_word
+
+user_input = input("enter a sentence: ")
+print(f"{last_letters(user_input)}")
