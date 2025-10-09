@@ -95,10 +95,28 @@ print(f"{count(user_cards2)}")
 print(f"{count(user_cards3)}")
 '''
 #Problem 10
-
+'''
 def war_of_numbers(numbers):
-    even_lyst = []
-    odd_lyst = []
+    output = ''
+    even_total = 0
+    odd_total = 0
     for num in numbers:
         if num % 2 == 0:
-            even_lyst.append
+            even_total += num
+        else:
+            odd_total += num
+    if even_total > odd_total:
+        output = "Evens"
+    else:
+        output = "Odds"
+    return output
+
+user_numbers1 = [2,8,7,5]
+user_numbers2 = [12,90,75,1,1]
+user_numbers3 = [2,10,22,243]
+print(f"{war_of_numbers(user_numbers1)}")
+print(f"{war_of_numbers(user_numbers2)}")
+print(f"{war_of_numbers(user_numbers3)}")
+'''
+#Problem 11
+
