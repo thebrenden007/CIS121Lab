@@ -200,26 +200,39 @@ print(f"{like_or_dislike(events2)}")
 print(f"{like_or_dislike(events3)}")
 print(f"{like_or_dislike(events4)}")
 '''
+#Problem 18
+'''
+def list_of_multiples(number, length):
+    lyst = []
+    for num in range(1, length + 1):
+        lyst.append(num * number)
+    return lyst
+
+num = int(input("enter a number: "))
+length = int(input("enter the length: "))
+print(f"{list_of_multiples(num, length)}")
+'''
 #Problem 19
 
 def is_acronym(s,words):
-    output = ""
-    for word in words:
-        for pos in range(1, len(word)):
-            if word[pos] == s[pos]:
-                output = "True"
-            else:
+    output = ''
+    if len(s) != len(words):
+          output = "False"
+    for pos in range(len(words)):
+        if not words[pos] or s[pos] != words[pos][0]:
                 output = "False"
+        else:
+                output = "True"
     return output
 
 s1 = "abc"
 s2 = "a"
-s3 = "a"
-s4 = "a"
+s3 = "ngguoy"
+s4 = "ab"
 words1 = ["alice", "bob", "charlie"]
 words2 = ["an", "apple"]
-words3 = ["an", "apple"]
-words4 = ["an", "apple"]
+words3 = ["never", "gonna", "give", "up", "on", "you"]
+words4 = ["apple", "banana", "cat"]
 print(f"{is_acronym(s1, words1)}")
 print(f"{is_acronym(s2, words2)}")
 print(f"{is_acronym(s3, words3)}")
