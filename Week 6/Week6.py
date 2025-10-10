@@ -179,7 +179,7 @@ miles = [5,3,2,1]
 print(f"{lag_days(miles)}")
 '''
 #Problem 16
-
+'''
 def like_or_dislike(events):
     state = "nothing"
     for event in events:
@@ -199,3 +199,28 @@ print(f"{like_or_dislike(events1)}")
 print(f"{like_or_dislike(events2)}")
 print(f"{like_or_dislike(events3)}")
 print(f"{like_or_dislike(events4)}")
+'''
+#Problem 19
+
+def is_acronym(s,words):
+    output = ""
+    for word in words:
+        for pos in range(1, len(word)):
+            if word[pos] == s[pos]:
+                output = "True"
+            else:
+                output = "False"
+    return output
+
+s1 = "abc"
+s2 = "a"
+s3 = "a"
+s4 = "a"
+words1 = ["alice", "bob", "charlie"]
+words2 = ["an", "apple"]
+words3 = ["an", "apple"]
+words4 = ["an", "apple"]
+print(f"{is_acronym(s1, words1)}")
+print(f"{is_acronym(s2, words2)}")
+print(f"{is_acronym(s3, words3)}")
+print(f"{is_acronym(s4, words4)}")
