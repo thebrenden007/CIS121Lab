@@ -119,4 +119,83 @@ print(f"{war_of_numbers(user_numbers2)}")
 print(f"{war_of_numbers(user_numbers3)}")
 '''
 #Problem 11
+'''
+def add_lists(lyst1, lyst2):
+    combined_lyst = []
+    for num in range(len(lyst1)):
+        combined_lyst.append(lyst1[num] + lyst2[num])
+    return combined_lyst
 
+lyst1 = [1,3,3,1]
+lyst2 = [4,3,6,1]
+print(f"{add_lists(lyst1, lyst2)}")
+'''
+#Problem 12
+'''
+def largest_even(numbers):
+    largest = -1
+    for num in numbers:
+        if num % 2 == 0 and num > largest:
+            largest = num
+    return largest
+
+numbers = [3,7,2,1,7,9,10,13]
+print(f"{largest_even(numbers)}")
+'''
+#Problem 13
+'''
+def largest_odd(numbers):
+    largest = -1
+    for num in numbers:
+        if num % 2 != 0 and num > largest:
+            largest = num
+    return largest
+
+numbers = [3,7,2,1,7,9,10,13]
+print(f"{largest_odd(numbers)}")
+'''
+#Problem 14
+'''
+def progress_days(miles):
+    progress = 0
+    for pos in range(1, len(miles)):
+        if miles[pos] > miles[pos-1]:
+            progress += 1
+    return progress
+
+miles = [3,4,1,2]
+print(f"{progress_days(miles)}")
+'''
+#Problem 15
+'''
+def lag_days(miles):
+    lag = 0
+    for pos in range(1, len(miles)):
+        if miles[pos] < miles[pos-1]:
+            lag += 1
+    return lag
+
+miles = [5,3,2,1]
+print(f"{lag_days(miles)}")
+'''
+#Problem 16
+
+def like_or_dislike(events):
+    state = "nothing"
+    for event in events:
+        if event == "like" and state != "like":
+            state = "like"
+        elif event == "dislike" and state != "dislike":
+            state = "dislike"
+        else:
+            state = "nothing"
+    return state
+
+events1 = ["dislike"]
+events2 = ["like", "like"]
+events3 = ["dislike", "like"]
+events4 = ["like", "dislike", "dislike"]
+print(f"{like_or_dislike(events1)}")
+print(f"{like_or_dislike(events2)}")
+print(f"{like_or_dislike(events3)}")
+print(f"{like_or_dislike(events4)}")
