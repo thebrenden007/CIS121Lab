@@ -95,7 +95,7 @@ sales = {"Laptop": 5, "Phone": 10, "Tablet": 3}
 print(total_sales(sales))
 '''
 #Problem 14
-
+'''
 def high_earners(employee_salaries, given_salary):
     high_earn_people = []
     for name in employee_salaries:
@@ -107,3 +107,4 @@ def high_earners(employee_salaries, given_salary):
 employee_salaries = {"Alice": 50000, "Bob": 75000, "Charlie": 100000}
 given_salary = int(input("enter a salary: "))
 print(high_earners(employee_salaries, given_salary))
+'''
