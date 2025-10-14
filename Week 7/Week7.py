@@ -1,7 +1,40 @@
 #Problem 2
 '''
 def find_unique(num_lyst):
+    num_dict = {}
+    unique_num_lyst = []
     for num in num_lyst:
+        if num in num_dict:
+            num_dict[num] += 1
+        else:
+            num_dict[num] = 1
+    for number in num_dict:
+        num_count = num_dict[number]
+        if num_count < 2:
+            unique_num_lyst.append(number)
+    return unique_num_lyst
+
+num_lyst = [1,2,2,3,3,4,4]
+print(find_unique(num_lyst))
+'''
+#Problem 3
+'''
+def return_unique(num_lyst):
+    num_dict = {}
+    unique_num_lyst = []
+    for num in num_lyst:
+        if num in num_dict:
+            num_dict[num] += 1
+        else:
+            num_dict[num] = 1
+    for number in num_dict:
+        num_count = num_dict[number]
+        if num_count < 2:
+            unique_num_lyst.append(number)
+    return unique_num_lyst
+
+num_lyst = [1,9,8,8,7,6,1,6]
+print(return_unique(num_lyst))
 '''
 #Problem 4
 '''
