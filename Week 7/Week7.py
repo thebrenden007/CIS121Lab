@@ -1,3 +1,26 @@
+#Problem 1
+
+def is_isogram(word):
+    output = ''
+    letter_dict = {}
+    for letter in word:
+        if letter in letter_dict:
+            letter_dict[letter] += 1
+        else:
+            letter_dict[letter] = 1
+    for letters in letter_dict:
+        letter_count = letter_dict[letters]
+        if letter_count < 2:
+            output = "True"
+        else: 
+            output = "False"
+    return output
+
+#word1 = "algorism"
+word2 = "password"
+#print(is_isogram(word1))
+print(is_isogram(word2))
+
 #Problem 2
 '''
 def find_unique(num_lyst):
