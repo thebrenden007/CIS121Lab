@@ -1,7 +1,6 @@
 #Problem 1
-
+'''
 def is_isogram(word):
-    output = ''
     letter_dict = {}
     for letter in word:
         if letter in letter_dict:
@@ -9,18 +8,15 @@ def is_isogram(word):
         else:
             letter_dict[letter] = 1
     for letters in letter_dict:
-        letter_count = letter_dict[letters]
-        if letter_count < 2:
-            output = "True"
-        else: 
-            output = "False"
-    return output
+        if letter_dict[letters] > 1:
+            return False
+    return True
 
-#word1 = "algorism"
+word1 = "algorism"
 word2 = "password"
-#print(is_isogram(word1))
+print(is_isogram(word1))
 print(is_isogram(word2))
-
+'''
 #Problem 2
 '''
 def find_unique(num_lyst):
@@ -138,6 +134,43 @@ for value in receipt:
     price = receipt[value]
     total_price += price
 print(total_price)
+'''
+#Problem 10
+'''
+menu = {"burger": 10, "fries": 4, "soda": 3}
+for item in menu:
+    price = menu[item]
+    print(f"{item} cost {price}")
+'''
+#Problem 11
+'''
+def count_repetitions(elements):
+    count_dict = {}
+    for item in elements:
+        if item in count_dict:
+            count_dict[item] += 1
+        else:
+            count_dict[item] = 1
+    return count_dict
+
+lyst1 = ["cat", "dog", "cat", "cow", "cow", "cow"]
+lyst2 = ["infinity", "null", "infinity", "null", "null"]
+print(count_repetitions(lyst1))
+print(count_repetitions(lyst2))
+'''
+#Problem 12
+'''
+def item_purchase(store, wallet):
+    afford_lyst = []
+    for item in store:
+        price = store[item]
+        if price < wallet + 1:
+            afford_lyst.append(item)
+    return afford_lyst
+
+store = {"Water": 1, "Bread": 3, "TV": 1000}
+wallet = int(input("enter a budget: "))
+print(item_purchase(store, wallet))
 '''
 #Problem 13
 '''
