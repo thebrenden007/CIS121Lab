@@ -1,3 +1,41 @@
+#Problem 1
+'''
+from random import randint
+def toss_coin(guess = 0):
+    output = ""
+    heads = 0
+    tails = 1
+    value = randint(0,1)
+    if guess == heads and value or guess == tails and value:
+        output = "Correct!"
+    else:
+        output = "Incorrect!"
+    return output
+
+print(toss_coin(1))
+'''
+#Problem 2
+'''
+from random import randint
+def odd_or_even(guess = "even"):
+    output = ""
+    value = randint(0,1)
+    print(value)
+    if guess == "even" and value == 0:
+        output = "Correct!"
+    elif guess == "odd" and value == 1:
+        output = "Correct!"
+    else:
+        output = "Incorrect!"
+
+    return output
+
+print(odd_or_even("even"))
+'''
+#Problem 3
+
+def count_duplicates(num_1 = 0, num_2 = 0, num_3 = 0):
+    
 #Problem 7
 '''
 def ascending_order(num_1, num_2 = 5, num_3 = 25):
@@ -11,6 +49,17 @@ def ascending_order(num_1, num_2 = 5, num_3 = 25):
     return [num_1, num_2, num_3]
 
 print(ascending_order(2,3,1))
+'''
+#Problem 9
+'''
+def get_indices(lyst, value = 0):
+    pos = []
+    for num in range(0, len(lyst)):
+        if value == lyst[num]:
+            pos.append(num)
+    return pos
+
+print(get_indices(["a", "a", "b", "a", "b", "a"], "a"))
 '''
 #Problem 15
 '''
