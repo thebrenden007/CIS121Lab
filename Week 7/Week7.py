@@ -180,6 +180,7 @@ def total_sales(sales):
         price = sales[value]
         total_price += price
     return total_price
+    
 sales = {"Laptop": 5, "Phone": 10, "Tablet": 3}
 print(total_sales(sales))
 '''
@@ -204,7 +205,6 @@ def total_calories(fruits):
     total_calories = 0
     for fruit in fruits:
         total_calories += calories[fruit]
-
     return total_calories
 
 print(total_calories(["apple", "banana", "orange"]))
@@ -216,7 +216,6 @@ def total_cost(ingredients):
     prices = {"flour": 2.50, "sugar": 1.80, "eggs": 3.00, "milk": 2.00, "butter": 2.75, "vanilla": 4.50, "chocolate": 5.00}
     for ingredient in ingredients:
         cost += prices[ingredient]
-
     return cost
 
 print(total_cost(["flour", "sugar", "eggs", "butter"]))
