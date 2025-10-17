@@ -13,7 +13,7 @@ def ascending_order(num_1, num_2 = 5, num_3 = 25):
 print(ascending_order(2,3,1))
 '''
 #Problem 15
-
+'''
 def is_negative(integer):
     if integer < 0:
         return True
@@ -34,3 +34,4 @@ def report_negative_odds(integer_lyst):
     return negative_odd_lyst
 
 print(report_negative_odds([100,-57,12,1,-36,-15]))
+'''
