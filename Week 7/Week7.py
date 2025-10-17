@@ -197,3 +197,47 @@ employee_salaries = {"Alice": 50000, "Bob": 75000, "Charlie": 100000}
 given_salary = int(input("enter a salary: "))
 print(high_earners(employee_salaries, given_salary))
 '''
+#Problem 16
+'''
+def total_calories(fruits):
+    calories = {"apple": 95, "banana": 105, "orange": 62, "grape": 3, "pear": 102}
+    total_calories = 0
+    for fruit in fruits:
+        total_calories += calories[fruit]
+
+    return total_calories
+
+print(total_calories(["apple", "banana", "orange"]))
+'''
+#Problem 17
+'''
+def total_cost(ingredients):
+    cost = 0
+    prices = {"flour": 2.50, "sugar": 1.80, "eggs": 3.00, "milk": 2.00, "butter": 2.75, "vanilla": 4.50, "chocolate": 5.00}
+    for ingredient in ingredients:
+        cost += prices[ingredient]
+
+    return cost
+
+print(total_cost(["flour", "sugar", "eggs", "butter"]))
+'''
+#Problem 18
+'''
+def majority_element(nums):
+    num_dict = {}
+    most_occurence = -1
+    majority_num = 0
+    for num in nums:
+        if num in num_dict:
+            num_dict[num] += 1
+        else:
+            num_dict[num] = 1
+    for number in num_dict:
+        occurence = num_dict[number]
+        if occurence > most_occurence:
+            most_occurence = occurence
+            majority_num = number
+    return majority_num
+
+print(majority_element([3,2,3]))
+'''
