@@ -61,9 +61,24 @@ def count_duplicates(num_1 = 0, num_2 = 0, num_3 = 0):
 print(count_duplicates(1,2,3))
 '''
 #Problem 4
-'''
-def find_winner(player1, player2):
-'''
+
+def find_winner(player1 = 'rock', player2 = 'rock'):
+    #rock = 0
+    #paper = 1
+    #scissors = 2
+    if player1 == player2:
+        return "It's a tie!"
+    elif player1 == 'rock' and player2 == 'scissor':
+        return "Player 1 wins!"
+    elif player1 == 'paper' and player2 == 'rock':
+        return "Player 1 wins!"
+    elif player1 == 'scissors' and player2 == 'paper':
+        return "Player 1 wins!"
+    else:
+        return "Player 2 wins!"
+    
+print(find_winner("scissors"))
+
 #Problem 7
 '''
 def ascending_order(num_1, num_2 = 5, num_3 = 25):
