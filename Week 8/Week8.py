@@ -35,7 +35,35 @@ print(odd_or_even("even"))
 #Problem 3
 
 def count_duplicates(num_1 = 0, num_2 = 0, num_3 = 0):
-    
+    count_dict = {}
+    x = -1
+    num_count = 0
+    most_common_num = 0
+    output = ""
+    numbers = [num_1, num_2, num_3]
+    for num in numbers:
+        if num in count_dict:
+            count_dict[num] += 1
+        else:
+            count_dict[num] = 1
+    for nums in count_dict:
+        num_count = count_dict[nums]
+        if num_count > x:
+            most_common_num = nums
+            x = num_count
+    if num_count == 1:
+        output = "Each number is unique"
+    else:
+        output = (f"There are {num_count} of the same number")
+
+    return output
+
+print(count_duplicates(1,2,3))
+
+#Problem 4
+'''
+def find_winner(player1, player2):
+'''
 #Problem 7
 '''
 def ascending_order(num_1, num_2 = 5, num_3 = 25):
