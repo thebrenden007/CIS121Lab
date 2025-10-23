@@ -33,7 +33,7 @@ def odd_or_even(guess = "even"):
 print(odd_or_even("even"))
 '''
 #Problem 3
-
+'''
 def count_duplicates(num_1 = 0, num_2 = 0, num_3 = 0):
     count_dict = {}
     x = -1
@@ -59,7 +59,7 @@ def count_duplicates(num_1 = 0, num_2 = 0, num_3 = 0):
     return output
 
 print(count_duplicates(1,2,3))
-
+'''
 #Problem 4
 '''
 def find_winner(player1, player2):
