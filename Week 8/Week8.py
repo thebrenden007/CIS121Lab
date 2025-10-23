@@ -169,7 +169,7 @@ def report_evens(integer_list):
 print(report_evens([4,3,12,16,8,9,25]))
 '''
 #Problem 13
-
+'''
 def is_vowel(letter):
     if letter in ['a','e','i','o','u']:
         return True
@@ -184,7 +184,26 @@ def report_vowels(word):
     return vowel_list
 
 print(report_vowels("apple"))
+'''
+#Problem 14
+'''
+def is_two_digit_number(num):
+    if num in range (10, 100):
+        return True
+    elif num in range (-99, -9):
+        return True
+    else:
+        return False
+    
+def report_two_digit_numbers(num_list):
+    two_digit_list = []
+    for num in num_list:
+        if is_two_digit_number(num) == True:
+            two_digit_list.append(num)
+    return two_digit_list
 
+print(report_two_digit_numbers([100,57,12,1]))
+'''
 #Problem 15
 '''
 def is_negative(integer):
