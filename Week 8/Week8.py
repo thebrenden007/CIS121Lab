@@ -142,7 +142,7 @@ def find_factors(number = 36):
 print(find_factors(12))
 '''
 #Problem 11
-
+'''
 def list_of_multiples(num, length = 5):
     multiples = []
     for number in range(1, length + 1):
@@ -150,6 +150,40 @@ def list_of_multiples(num, length = 5):
     return multiples
 
 print(list_of_multiples(7,5))
+'''
+#Problem 12
+'''
+def is_even(num):
+    if num % 2 == 0:
+        return True
+    else:
+        return False
+
+def report_evens(integer_list):
+    even_list = []
+    for num in integer_list:
+        if is_even(num) == True:
+            even_list.append(num)
+    return even_list
+
+print(report_evens([4,3,12,16,8,9,25]))
+'''
+#Problem 13
+
+def is_vowel(letter):
+    if letter in ['a','e','i','o','u']:
+        return True
+    else:
+        return False
+
+def report_vowels(word):
+    vowel_list = []
+    for letter in word:
+        if is_vowel(letter) == True:
+            vowel_list.append(letter)
+    return vowel_list
+
+print(report_vowels("apple"))
 
 #Problem 15
 '''
