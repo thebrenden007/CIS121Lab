@@ -61,7 +61,7 @@ def count_duplicates(num_1 = 0, num_2 = 0, num_3 = 0):
 print(count_duplicates(1,2,3))
 '''
 #Problem 4
-
+'''
 def find_winner(player1 = 'rock', player2 = 'rock'):
     #rock = 0
     #paper = 1
@@ -78,7 +78,20 @@ def find_winner(player1 = 'rock', player2 = 'rock'):
         return "Player 2 wins!"
     
 print(find_winner("scissors"))
+'''
+#Problem 6
 
+def hailstone_seq(n = 40):
+    lyst = []
+    while n != 1:
+        if n % 2 == 0:
+            n = n // 2
+        elif n % 2 != 0:
+            n = ((3 * n) + 1)
+        lyst.append(n)
+    return lyst
+
+print(hailstone_seq(25))
 #Problem 7
 '''
 def ascending_order(num_1, num_2 = 5, num_3 = 25):
