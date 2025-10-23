@@ -80,7 +80,7 @@ def find_winner(player1 = 'rock', player2 = 'rock'):
 print(find_winner("scissors"))
 '''
 #Problem 6
-
+'''
 def hailstone_seq(n = 40):
     lyst = []
     while n != 1:
@@ -92,6 +92,7 @@ def hailstone_seq(n = 40):
     return lyst
 
 print(hailstone_seq(25))
+'''
 #Problem 7
 '''
 def ascending_order(num_1, num_2 = 5, num_3 = 25):
