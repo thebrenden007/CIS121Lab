@@ -213,7 +213,7 @@ length = int(input("enter the length: "))
 print(f"{list_of_multiples(num, length)}")
 '''
 #Problem 19
-'''
+
 def is_acronym(s,words):
     if len(s) != len(words):
           return False
@@ -235,4 +235,3 @@ print(f"{is_acronym(s1, words1)}")
 print(f"{is_acronym(s2, words2)}")
 print(f"{is_acronym(s3, words3)}")
 print(f"{is_acronym(s4, words4)}")
-'''
