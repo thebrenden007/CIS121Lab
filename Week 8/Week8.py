@@ -96,7 +96,6 @@ print(hailstone_seq(25))
 #Problem 7
 '''
 def ascending_order(num_1, num_2 = 5, num_3 = 25):
-    ascending_lyst = []
     if num_1 > num_2:
         num_1, num_2 = num_2, num_1
     if num_1 > num_3:
@@ -107,6 +106,18 @@ def ascending_order(num_1, num_2 = 5, num_3 = 25):
 
 print(ascending_order(2,3,1))
 '''
+#Problem 8
+
+def descending_order(num_1, num_2 = 15, num_3 = 5):
+    if num_1 < num_2:
+        num_1, num_2 = num_2, num_1
+    if num_1 < num_3:
+        num_1, num_3 = num_3, num_1
+    if num_2 < num_3:
+        num_2, num_3 = num_3, num_2
+    return [num_1, num_2, num_3]
+
+print(descending_order(2,45))
 #Problem 9
 '''
 def get_indices(lyst, value = 0):
