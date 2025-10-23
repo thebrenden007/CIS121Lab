@@ -107,7 +107,7 @@ def ascending_order(num_1, num_2 = 5, num_3 = 25):
 print(ascending_order(2,3,1))
 '''
 #Problem 8
-
+'''
 def descending_order(num_1, num_2 = 15, num_3 = 5):
     if num_1 < num_2:
         num_1, num_2 = num_2, num_1
@@ -118,6 +118,7 @@ def descending_order(num_1, num_2 = 15, num_3 = 5):
     return [num_1, num_2, num_3]
 
 print(descending_order(2,45))
+'''
 #Problem 9
 '''
 def get_indices(lyst, value = 0):
@@ -129,6 +130,27 @@ def get_indices(lyst, value = 0):
 
 print(get_indices(["a", "a", "b", "a", "b", "a"], "a"))
 '''
+#Problem 10
+'''
+def find_factors(number = 36):
+    factors = []
+    for num in range (1, number + 1):
+        if number % num == 0:
+            factors.append(num)
+    return factors
+
+print(find_factors(12))
+'''
+#Problem 11
+
+def list_of_multiples(num, length = 5):
+    multiples = []
+    for number in range(1, length + 1):
+        multiples.append(num * number)
+    return multiples
+
+print(list_of_multiples(7,5))
+
 #Problem 15
 '''
 def is_negative(integer):
