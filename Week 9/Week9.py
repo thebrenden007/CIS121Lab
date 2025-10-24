@@ -116,7 +116,7 @@ def flip_flop(word):
 print(flip_flop('abcde'))
 '''
 #Problem 6
-
+'''
 def hamming_distance(str1, str2):
 	if len(str1) != len(str2):
 		return "Strings must be of equal length."
@@ -128,3 +128,19 @@ def hamming_distance(str1, str2):
 	return distance
 
 print(hamming_distance("cat", "dog"))
+'''
+#Problem 7
+
+def hailstone_seq(n):
+	sequence = []
+	
+	while n != 1:
+		if n % 2 == 0:
+			n = n // 2
+		else:
+			n = ((3 * n) + 1)
+		sequence.append(n)
+		
+	return sequence
+
+print(hailstone_seq(25))
