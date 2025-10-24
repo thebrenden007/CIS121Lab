@@ -161,7 +161,7 @@ def like_or_dislike(events):
 print(like_or_dislike(['dislike', 'like']))
 '''
 #Problem 9
-
+'''
 def return_unique(numbers):
 
 	number_dicitonary = {}
@@ -179,3 +179,16 @@ def return_unique(numbers):
 	return unique_numbers
 
 print(return_unique([1,9,8,8,7,6,1,6]))
+'''
+#Problem 10
+
+def find_factors(num):
+	factors = []
+	
+	for i in range(1, num + 1):
+		if num % i == 0:
+			factors.append(i)
+
+	return factors
+
+print(find_factors(12))
