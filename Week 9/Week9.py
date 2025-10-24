@@ -40,7 +40,7 @@ def convert_knuts(knuts=450):
 print(convert_knuts(544))
 '''
 #Problem 2
-
+'''
 def highway_directions(highway_num):
 	if 1 < highway_num < 99:
 		if highway_num % 2 == 0:
@@ -62,3 +62,13 @@ def highway_directions(highway_num):
 		return f"I-{highway_num} is an invalid highway number"
 	
 print(highway_directions(353))
+'''
+#Problem 3
+
+def design_rug(width, length, pattern):
+	result = "Your rug is:\n"
+	for i in range(length -1):
+		result += pattern * width
+		if i < length - 1:
+			result += "\t"
+	return result
