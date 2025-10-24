@@ -146,7 +146,7 @@ def hailstone_seq(n):
 print(hailstone_seq(25))
 '''
 #Problem 8
-
+'''
 def like_or_dislike(events):
 	state = "nothing"
 	
@@ -159,3 +159,23 @@ def like_or_dislike(events):
 	return state
 
 print(like_or_dislike(['dislike', 'like']))
+'''
+#Problem 9
+
+def return_unique(numbers):
+
+	number_dicitonary = {}
+	for number in numbers:
+		if number in number_dicitonary:
+			number_dicitonary[number] += 1			
+		else:
+			number_dicitonary[number] = 1
+
+	unique_numbers = []
+	for number in number_dicitonary:
+		if number_dicitonary[number] == 1:
+			unique_numbers.append(number)
+
+	return unique_numbers
+
+print(return_unique([1,9,8,8,7,6,1,6]))
