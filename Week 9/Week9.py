@@ -130,7 +130,7 @@ def hamming_distance(str1, str2):
 print(hamming_distance("cat", "dog"))
 '''
 #Problem 7
-
+'''
 def hailstone_seq(n):
 	sequence = []
 	
@@ -144,3 +144,18 @@ def hailstone_seq(n):
 	return sequence
 
 print(hailstone_seq(25))
+'''
+#Problem 8
+
+def like_or_dislike(events):
+	state = "nothing"
+	
+	for event in events:
+		if event != state:
+			state = event
+		else:
+			state = "nothing"
+	
+	return state
+
+print(like_or_dislike(['dislike', 'like']))
