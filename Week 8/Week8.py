@@ -63,9 +63,6 @@ print(count_duplicates(1,2,3))
 #Problem 4
 '''
 def find_winner(player1 = 'rock', player2 = 'rock'):
-    #rock = 0
-    #paper = 1
-    #scissors = 2
     if player1 == player2:
         return "It's a tie!"
     elif player1 == 'rock' and player2 == 'scissor':
