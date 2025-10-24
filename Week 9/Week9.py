@@ -98,7 +98,7 @@ def count_duplicates(num_1, num_2, num_3):
 print(count_duplicates(2,3,2))
 '''
 #Problem 5
-
+'''
 def flip_flop(word):
 	length = len(word)
 	middle = length // 2
@@ -114,3 +114,17 @@ def flip_flop(word):
 		return last_part + middle_char + first_part
 
 print(flip_flop('abcde'))
+'''
+#Problem 6
+
+def hamming_distance(str1, str2):
+	if len(str1) != len(str2):
+		return "Strings must be of equal length."
+	
+	distance = 0
+	for i in range(len(str1)):
+		if str1[i] != str2[i]:
+			distance += 1
+	return distance
+
+print(hamming_distance("cat", "dog"))
