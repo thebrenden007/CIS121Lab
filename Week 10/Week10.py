@@ -84,7 +84,7 @@ product1.set_quantity(5)
 print(product1)
 '''
 #Problem 6
-
+'''
 class Student:
     def __init__(self, name, major, GPA):
         self.name = name
@@ -114,8 +114,26 @@ student1 = Student('brenden', 'CIT', 3.5)
 print(student1.introduce())
 print(student1.get_GPA())
 print(student1.studying())
-
-#print(student1.studying())
+'''
+#Problem 9
+'''
+class Point:
+    def __init__(self, xcord, ycord):
+        self.xcord = xcord
+        self.ycord = ycord
+    def get_xcord(self):
+        return self.xcord
+    def set_xcord(self, value):
+        self.xcord = value
+    def get_ycord(self):
+        return self.ycord
+    def set_ycord(self, value):
+        self.ycord = value
+    def print_info(self):
+        return f'(x,y) = ({self.xcord},{self.ycord})'
+point1 = Point(5,4)
+print(point1.print_info())
+'''
 #Problem 15
 '''
 class Recipe:
