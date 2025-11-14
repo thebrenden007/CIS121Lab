@@ -86,7 +86,7 @@ restaurant1.display_menu()
 restaurant1.lunch_menu()
 '''
 #Problem 10
-
+'''
 class Book:
     def __init__(self, title, author):
         self.title = title
@@ -114,3 +114,4 @@ library1 = Library('Awesome Library')
 library1.add_book(book1)
 library1.add_book(book2)
 library1.display_catalog()
+'''
