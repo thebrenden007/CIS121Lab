@@ -41,8 +41,8 @@ course1.add_student(student2)
 course1.show_student_enrollment()
 print(course1)
 '''
-#Problem 8
-
+#Problem 9
+'''
 class MenuItem:
     def __init__(self, name, price):
         self.name = name
@@ -84,3 +84,33 @@ restaurant1.add_menu_item(item1)
 restaurant1.add_menu_item(item2)
 restaurant1.display_menu()
 restaurant1.lunch_menu()
+'''
+#Problem 10
+
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+    def get_author(self):
+        return self.author
+    def set_author(self, value):
+        self.author = value
+    def display_info(self):
+        return f'{self.title} is written by {self.author}'
+
+class Library:
+    def __init__(self, library_name):
+        self.library_name = library_name
+        self.books = []
+    def add_book(self, book):
+        self.books.append(book)
+    def display_catalog(self):
+        for book in self.books:
+            print(book.display_info())
+
+book1 = Book('Good Book', 'Bob')
+book2 = Book('Bad Book', 'Fred')
+library1 = Library('Awesome Library')
+library1.add_book(book1)
+library1.add_book(book2)
+library1.display_catalog()
