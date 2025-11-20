@@ -20,7 +20,7 @@ new_p = p1 + p2
 print(new_p)
 '''
 #Problem 10
-
+'''
 class ShoppingCart:
     def __init__(self, items = {}):
         self.items = items
@@ -29,9 +29,22 @@ class ShoppingCart:
             self.items[item] += 1
         else:
             self.items[item] = 1
-
-p1 = ShoppingCart({"tea" : 1, "energy drink" : 2})
-p1.add_item({"sandwich" : 2})
-
-p2 = ShoppingCart({"energy drink" : 3, "hat" : 1})
-print(p2)
+    def __add__(self, other):
+        combined = ShoppingCart()
+        for item, qty in self.items.items():
+            combined.items[item] = qty
+        for item, qty in other.items.items():
+            if item in combined.items:
+                combined.items[item] += qty
+            else:
+                combined.items[item] = qty
+        return combined
+    def __str__(self):
+        return f'{self.items}'
+    
+cart1 = ShoppingCart({"tea" : 1, "energy drink" : 2})
+cart1.add_item("sandwich")
+cart2 = ShoppingCart({"energy drink" : 3, "hat" : 1})
+combined = cart1 + cart2
+print(combined)
+'''
