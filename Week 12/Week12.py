@@ -1,3 +1,21 @@
+#Problem 8
+'''
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+    def area(self):
+        return self.width * self.height
+    def __mul__(self, num):
+        multiplied_width = self.width * num
+        multiplied_height = self.height * num
+        return Rectangle(multiplied_width, multiplied_height)
+    def __str__(self):
+        return f"Rectangle ({self.width} x {self.height})"
+r1 = Rectangle(4,5)
+r2 = Rectangle(3,2)
+print(r1 * 3)
+'''
 #Problem 9
 '''
 class Playlist:
