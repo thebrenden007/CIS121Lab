@@ -1,3 +1,36 @@
+#Problem 1
+'''
+class Vector:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    def __eq__(self, other):
+        if self.a == other.a and self.b == other.b:
+            return True
+        else:
+            return False
+    def __add__(self, other):
+        combined_a = self.a + other.a
+        combined_b = self.b + other.b
+        new_vector = Vector(combined_a, combined_b)
+        return new_vector
+    def __str__(self):
+        #return f'This vector has an x of {self.a} and a y of {self.b}'
+        return f'v = {self.a}x + {self.b}y'
+
+v1 = Vector(2,3)
+v2 = Vector(2,3)
+v3 = Vector(4,5)
+new_v = v1 + v3
+print(new_v)
+'''
+#Problem 4
+
+class LinearEquation:
+    def __init__(self, m, b):
+        self.m = m
+        self.b = b
+    def __add__
 #Problem 8
 '''
 class Rectangle:
