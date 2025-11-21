@@ -25,12 +25,13 @@ new_v = v1 + v3
 print(new_v)
 '''
 #Problem 4
-
+'''
 class LinearEquation:
     def __init__(self, m, b):
         self.m = m
         self.b = b
     def __add__
+'''
 #Problem 8
 '''
 class Rectangle:
