@@ -18,8 +18,9 @@ thisFile.close()
 
 thisFile = open("Week 13/thisFile.txt", "r")
 thatFile = open("Week 13/thatFile.txt", "w")
-for line in thisFile:
-    thatFile.write(f'{line}')
+for index, line in enumerate(thisFile):
+    if index % 2 == 0:
+        thatFile.write(f'{line}')
 thisFile.close()
 thatFile.close()
 '''
@@ -86,8 +87,10 @@ for name, plays in dict.items():
     print(name, plays)
 '''
 #Problem 13
+'''
 myfamily = [("Brenden", 18), ("Dad", 44), ("Mom", 42), ("Lauren", 16)]
 family = open("Week 13/Family.csv", "w")
 family.write("Name,Age\n")
 for name, age in myfamily:
     family.write(f'{name},{age}\n')
+'''
