@@ -35,3 +35,14 @@ for row in daily_visits:
 
 print(f'avg number of visitors at the libray is {total_visitors/total_days}')
 '''
+#Problem 8
+
+highest_calories_burned = 0
+calories_burned_data = open("Week 13/CaloriesBurnedData.txt", "r")
+for row in calories_burned_data:
+    data = row.split("  ")
+    calories_burned = int(data[1])
+    if calories_burned > highest_calories_burned:
+        highest_calories_burned = calories_burned
+
+print(f'The highest calories burned was: {highest_calories_burned} Calories')
