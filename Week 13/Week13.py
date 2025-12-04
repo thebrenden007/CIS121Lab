@@ -7,6 +7,22 @@ for index in range (100):
     QuizInts.write(f'{number}\n')
 QuizInts.close()
 '''
+#Problem 2
+'''
+import random
+thisFile = open("Week 13/thisFile.txt", "w")
+for index in range (100):
+    number = random.randint(50,201)
+    thisFile.write(f'{number}\n')
+thisFile.close()
+
+thisFile = open("Week 13/thisFile.txt", "r")
+thatFile = open("Week 13/thatFile.txt", "w")
+for line in thisFile:
+    thatFile.write(f'{line}')
+thisFile.close()
+thatFile.close()
+'''
 #Problem 7
 '''
 total_visitors = 0
