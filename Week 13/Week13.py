@@ -85,3 +85,9 @@ for line in songplays:
 for name, plays in dict.items():
     print(name, plays)
 '''
+#Problem 13
+myfamily = [("Brenden", 18), ("Dad", 44), ("Mom", 42), ("Lauren", 16)]
+family = open("Week 13/Family.csv", "w")
+family.write("Name,Age\n")
+for name, age in myfamily:
+    family.write(f'{name},{age}\n')
