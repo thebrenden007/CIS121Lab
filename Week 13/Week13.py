@@ -44,6 +44,20 @@ for row in lunchdata:
     total_lunches += lunches
 print(f'The total lunches was {total_lunches}')
 '''
+#Problem 6
+'''
+speech = open("Week 13/aMorePerfectUnion.txt", "r")
+word_dict = {}
+for line in speech:
+    words = line.split()
+    for word in words:
+        word = word.lower()
+        if word in word_dict:
+            word_dict[word] += 1
+        else:
+            word_dict[word] = 1
+print(word_dict)
+'''
 #Problem 7
 '''
 total_visitors = 0
