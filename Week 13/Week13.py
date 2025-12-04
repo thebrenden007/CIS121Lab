@@ -38,11 +38,14 @@ print(f'avg number of visitors at the libray is {total_visitors/total_days}')
 #Problem 8
 
 highest_calories_burned = 0
+highest_day = ""
 calories_burned_data = open("Week 13/CaloriesBurnedData.txt", "r")
 for row in calories_burned_data:
     data = row.split("  ")
     calories_burned = int(data[1])
+    day = data[0]
     if calories_burned > highest_calories_burned:
         highest_calories_burned = calories_burned
+        highest_day = day
 
-print(f'The highest calories burned was: {highest_calories_burned} Calories')
+print(f'The day with the highest calories burned was {highest_day} with {highest_calories_burned} Calories')
