@@ -20,3 +20,16 @@ except ValueError:
 except IndexError:
     print("Index out of range")
 '''
+#Problem 5
+'''
+points_dict = {"Alice": 90, "Bob": 75, "Charlie": 60}
+try:
+    user_name = input("enter a name: ")
+    user_points = int(input("enter a score: "))
+    points_dict[user_name] += user_points
+    print(points_dict[user_name])
+except ValueError:
+    print("Invalid Number")
+except KeyError:
+    print("Student not found")
+'''
